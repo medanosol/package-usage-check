@@ -1,6 +1,6 @@
-# package-usage-check
+# @medanosol/package-usage-check
 
-`package-usage-check` is a command-line utility that helps you identify and list unused npm packages in your project's source code.
+`@medanosol/package-usage-check` is a command-line utility that helps you identify and list unused npm packages in your project's source code.
 
 ## Table of Contents
 
@@ -10,16 +10,16 @@
 
 ## Installation
 
-Before using `package-usage-check`, you need to install it globally via npm:
+Before using `@medanosol/package-usage-check`, you need to install it globally via npm:
 
 ```bash
-npm install -g package-usage-check
+npm install -g @medanosol/package-usage-check
 ```
 
 or
 
 ```bash
-npx package-usage-check
+npx @medanosol/package-usage-check
 ```
 
 ## Usage
@@ -31,13 +31,13 @@ To check for unused npm packages in your project, follow these steps:
 3. Run the following command:
 
 ```bash
-npx package-usage-check
+npx @medanosol/package-usage-check
 ```
 
 or
 
 ```bash
-npx package-usage-check  #(If you haven't installed it globally)
+npx @medanosol/package-usage-check  #(If you haven't installed it globally)
 ```
 
 4. The tool will prompt you to enter the source directory of your project. The default value is "src," but you can change it to the path where your source code is located.
@@ -47,7 +47,7 @@ npx package-usage-check  #(If you haven't installed it globally)
 
 ## How it Works
 
-The package-usage-check utility works by analyzing your project's source code to find
+The @medanosol/package-usage-check utility works by analyzing your project's source code to find
 import statements of npm packages in your .js, .ts, .tsx or .jsx files. It checks the
 dependencies specified in your project's package.json and identifies which packages are not
 used in your codebase.
