@@ -47,7 +47,7 @@ npx @medanosol/package-usage-check  #(If you haven't installed it globally)
 
 ## How it Works
 
-The @medanosol/package-usage-check utility works by analyzing your project's source code to find
+The `@medanosol/package-usage-check` utility works by analyzing your project's source code to find
 import statements of npm packages in your .js, .ts, .tsx or .jsx files. It checks the
 dependencies specified in your project's package.json and identifies which packages are not
 used in your codebase.
