@@ -1,0 +1,35 @@
+{
+  "name": "@medanosol/package-usage-check",
+  "version": "0.0.1",
+  "private": false,
+  "description": "A command-line utility that helps you identify and list unused npm packages in your project's source code.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "package-usage",
+    "package-usage-check",
+    "npm-packages",
+    "package.json",
+    "package",
+    "cmd",
+    "unused packages"
+  ],
+  "author": "David Díaz",
+  "license": "MIT",
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "cli-table": "^0.3.11",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.10",
+    "sharp": "^0.32.6"
+  },
+  "bin": {
+    "package-check": "./index.js"
+  },
+  "devDependencies": {
+    "@types/cli-table": "^0.3.2"
+  }
+}
