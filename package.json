@@ -1,6 +1,6 @@
 {
   "name": "@medanosol/package-usage-check",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "A command-line utility that helps you identify and list unused npm packages in your project's source code.",
   "main": "index.js",
