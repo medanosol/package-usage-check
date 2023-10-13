@@ -1,12 +1,17 @@
 #!/usr/bin/env node
 
 import * as p from "@clack/prompts";
+import cliProgress from "cli-progress";
 import Table from "cli-table";
 import fse from "fs-extra";
 import { sync } from "glob";
 import { hideBin } from "yargs/helpers";
 import yargs from "yargs/yargs";
-const s = p.spinner();
+
+const progressBar = new cliProgress.SingleBar(
+  {},
+  cliProgress.Presets.shades_classic
+);
 
 // Arguments
 const argv = yargs(hideBin(process.argv)).argv;
@@ -50,8 +55,7 @@ try {
   process.exit(0);
 }
 const usedPackages = new Set();
-s.message("Reading files...");
-s.start();
+progressBar.start(files.length, 0);
 for (const file of files) {
   try {
     const fileContent = fse.readFileSync(
@@ -67,13 +71,14 @@ for (const file of files) {
         usedPackages.add(packageName);
       }
     }
+    progressBar.increment();
   } catch {
-    s.stop();
+    progressBar.stop();
     p.note("Something went wrong", "Error");
     process.exit(0);
   }
 }
-s.stop();
+progressBar.stop();
 
 const unusedPackages = allDependencies.filter(
   (packageName) => !usedPackages.has(packageName)
