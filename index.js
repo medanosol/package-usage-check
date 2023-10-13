@@ -64,7 +64,7 @@ for (const file of files) {
     );
     for (const packageName of allDependencies) {
       const packageImportRegex = new RegExp(
-        `import .* from ['"]${packageName}['"];`,
+        `(import .* from ['"]${packageName}['"]);|require\\(['"]${packageName}['"]\\);`,
         "g"
       );
       if (fileContent.match(packageImportRegex)) {
