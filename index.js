@@ -28,7 +28,7 @@ if (!packageJson) {
 
 const sourceInput = await p.text({
   message:
-    "Enter the source of the project: (Type 'root' to use the root of the project)",
+    "Enter the folder you would like to scan: (Type 'root' to use the root of the project)",
   defaultValue: "src",
   placeholder: "src",
   validate: (value) => {
