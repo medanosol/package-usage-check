@@ -95,6 +95,10 @@ if (unusedPackages.length > 0) {
   });
 
   console.log(table.toString());
+  p.note(
+    "Note: Please exercise caution when uninstalling packages. Some packages may be used internally or by other dependencies in your project.",
+    "Disclaimer"
+  );
 } else {
   p.outro("No unused packages");
 }
