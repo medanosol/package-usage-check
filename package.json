@@ -3,6 +3,10 @@
   "version": "0.0.3",
   "private": false,
   "description": "A command-line utility that helps you identify and list unused npm packages in your project's source code.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medanosol/package-usage-check.git"
+  },
   "main": "index.js",
   "type": "module",
   "scripts": {

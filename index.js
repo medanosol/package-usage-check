@@ -55,6 +55,7 @@ try {
   process.exit(0);
 }
 const usedPackages = new Set();
+console.log("\n");
 progressBar.start(files.length, 0);
 for (const file of files) {
   try {
