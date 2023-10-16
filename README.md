@@ -51,3 +51,7 @@ The `@medanosol/package-usage-check` utility works by analyzing your project's s
 import statements of npm packages in your .js, .ts, .tsx or .jsx files. It checks the
 dependencies specified in your project's package.json and identifies which packages are not
 used in your codebase.
+
+## Command Line Options
+
+- `--include-dev`: Include development dependencies when checking for unused packages. By default, only regular dependencies are considered.
