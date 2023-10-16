@@ -7,6 +7,8 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [How it Works](#how-it-works)
+- [Interactive Package Removal](#interactive-package-removal)
+- [Command Line Options](#command-line-options)
 
 ## Installation
 
@@ -51,6 +53,18 @@ The `@medanosol/package-usage-check` utility works by analyzing your project's s
 import statements of npm packages in your .js, .ts, .tsx or .jsx files. It checks the
 dependencies specified in your project's package.json and identifies which packages are not
 used in your codebase.
+
+## Interactive Package Removal
+
+The includes an interactive package removal feature. If you find any unused packages, the tool will prompt you to select packages for removal interactively. It will execute the necessary commands to uninstall the selected packages using your package manager.
+
+To interactively remove packages:
+
+1. After the tool identifies unused packages, it will prompt you to select packages for removal.
+2. Use the arrow keys to navigate and the spacebar to select packages for removal.
+3. Once you've made your selections, press Enter to confirm.
+4. Select the package manager used for the package removal.
+5. The tool will uninstall the selected packages and display a message indicating the packages that have been removed.
 
 ## Command Line Options
 
