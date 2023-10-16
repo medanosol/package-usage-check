@@ -1,5 +1,15 @@
 # Changelog
 
+## Version 0.0.5
+
+### Features
+
+- Users can now interactively select and remove unused packages directly from the command line.
+
+## Version 0.0.4
+
+- Minor changes
+
 ## Version 0.0.3
 
 ### Features
